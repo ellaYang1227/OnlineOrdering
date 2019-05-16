@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-language" content="zh-tw">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--網頁語系-->
+  <!--使用該IE版本之最新版本標準模式解析-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>快樂點 線上訂餐系統</title>
+  <meta name="keyword" content="好鄰市集,二手交換,團購,集點,樂叩點,優惠,活動">
+  <meta name="description" content="使用『好鄰市集』帳戶輕鬆線上訂購涼手作冰品產品，提供店家菜單瀏覽、餐點訂購、訂單進度追蹤...等，讓您一手掌握店家資訊，成為您不可或缺的團購好幫手。">
+
+  <!-- Favicons -->
+  <link href="images/shared/favico.ico" rel="icon" type="shortcut icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favico-57x57.png">
+  <link rel="apple-touch-icon" sizes="72×72" href="images/favico-72x72.png">
+  <link rel="apple-touch-icon" sizes="114×114" href="images/favico-114×114.png">
+  <link rel="apple-touch-icon" sizes="144×144" href="images/favico-144×144.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.3.3.7.css">
+
+  <!-- Swiper 可觸屏滑動(主選單) -->
+  <link rel="stylesheet" href="css/swiper.min.4.1.0.css">
+
+  <!-- Bootstrap select 自訂義下拉列表 -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.1.12.4.css">
+
+  <!-- Other CSS -->
+  <link href="css/layout18-e.css" rel="stylesheet" type="text/css">
+  <link href="css/GroupBuyLayout19-e.css" rel="stylesheet" type="text/css">
+  <link href="css/StoreToGoMenu19-e.css" rel="stylesheet" type="text/css">
+
+  <!--font-awesome(Bootstrap專用icons)-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--[if IE 7]>
+<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+<![endif]-->
+  <!--Font Awesome(新版)-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!--Material icons(google)-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap HTML5 shim 和 Respond.js 是為了讓 IE8 支持 HTML5 元素和媒體查詢（media queries）功能-->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#ClassMenu-navbar">
+  <section id="header">
+    <div class="container">
+      <nav>
+        <img src="images/shared/快樂點logo.svg" alt="快樂點logo">
+        <div class="input-group col-xs-12 col-sm-6">
+          <span class="input-group-addon"><i class="fas fa-store"></i></span>
+          <select class="form-control" id="storeSelect"></select>
+        </div>
+        <div class="iconLink">
+          <!-- <a class="font-888" href="#" role="button"><i class="fas fa-user"></i></a> -->
+          <div id="shoppingIcon" class="font-888"></div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!--main-->
+  <section id="main">
+    <div class="container-fluid">
+      <div class="row">
+        <!--banner 店家招牌-->
+        <div id="banner-all"></div>
+      </div>
+    </div>
+    </div>
+    <!-- 店家分類選單列 -->
+    <div id="ClassMenu-all" class="sticky-top">
+      <nav id="ClassMenu-navbar" class="navbar navbar-default">
+        <div class="container d-flex">
+          <!-- 分類選單 -->
+          <div id="ClassMenu">
+            <div class="swiper-container" id="ClassMenu-swiper">
+              <ul class="swiper-wrapper nav navbar-nav"></ul>
+            </div>
+          </div>
+          <!-- 分類選單-搜尋 
+          <div id="ClassMenu-search">
+            <button type="button" class="btn btn-Toggle"><i class="fas fa-search"></i></button>
+          </div>-->
+        </div>
+      </nav>
+      <!-- 分類選單-搜尋 toggle
+      <div id="searchToggle">
+        <div class="container searchToggle-content">
+          <div class="input-all">
+            <div class="input-group">
+              <div class="text-addon">
+                <input type="text" class="form-control" name="productSearch" id="productSearch" placeholder="店家產品">
+                <label for="productSearch" title="productSearch">搜尋</label>
+              </div>
+              <span class="input-group-btn">
+                <button class="btn btn-productSearch" type="submit"><i class="icon-search"></i></button>
+              </span>
+            </div>
+          </div>
+          <button type="button" class="close"><i class="fas fa-times"></i></button>
+        </div>
+      </div> -->
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- 產品列表 -->
+        <div class="col-xs-12 col-sm-7 col-md-8" id="productList"></div>
+        <!--我的購物車(sm 以上用) -->
+        <div class="sticky-top col-xs-12 col-sm-5 col-md-4 hidden-xs" id="myShopping">
+          <div class="border-d2d2d2">
+            <!--標題-->
+            <h2 class="UnitTitle">我的購物車</h2>
+            <!--購物內容-->
+            <div class="UnitContent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--我的購物車(xs 用)-->
+    <div id="myShopping-xs"></div>
+  </section>
+  <section id="footer">快樂點 線上訂餐 © 2019 All Rights Reserved.</section>
+
+
+  <!-- 關於店家 Modal -->
+  <div class="modal fade" id="storeModal" tabindex="-1" role="dialog" aria-labelledby="storeModalLabel"></div>
+  <!-- 產品詳情 Modal -->
+  <div class="modal fade productModal" id="productModal" tabindex="-1" role="dialog"
+    aria-labelledby="productModalLabel"></div>
+
+  <!-- Bootstrap -->
+  <!-- 先 jQuery first, 再 Bootstrap JS -->
+  <!-- (共用)jquery.min.1.12.4 與 Bootstrap、 水平滾動選單(主選單)、倒數計時(好鄰熱賣、最新體驗)、Bootstrap 手機版 右側功能選單滑動、Twitter bootstrap 模糊查詢插件(品牌&搜尋列之搜尋用) -->
+  <script src="js/jquery.min.1.12.4.js"></script>
+  <script src="js/bootstrap.min.3.3.7.js"></script>
+  
+  <!-- 串資料 -->
+  <script type="text/javascript" src="js/allData.js"></script>
+  
+  <!-- Bootstrap select 自訂義下拉列表 -->
+  <script src="js/bootstrap-select.min.1.12.4.js"></script>
+
+  <!-- Swiper 可觸屏滑動(主選單)-->
+  <script type="text/javascript" src="js/swiper.min.4.1.0.js"></script>
+  <script type="text/javascript" src="js/custom-swiper-shared.js"></script>
+  <script type="text/javascript" src="js/custom-swiper-StoreToGoMenu.js"></script>
+
+  <!-- 店家菜單總覽-自訂 JS(全部) -->
+  <script type="text/javascript" src="js/StoreToGoMenu-custom-all.js"></script>
+
+  <!-- 滾動監聽 (Scrollspy) - 分類選單 & 產品項目 -->
+  <script type="text/javascript" src="js/customScrollspy.js"></script>
+
+  <!-- 數量 input -->
+  <script src="js/custom-quantity-input.js"></script>
+
+</body>
+
+</html>

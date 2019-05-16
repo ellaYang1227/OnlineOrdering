@@ -1,0 +1,2087 @@
+﻿@charset "utf-8";
+/* GroupBuyLayout19-e 團購系列 共用 樣式 */
+
+#main{
+	padding: 15px 0 10px 0;
+}
+
+.UnitTitle{
+	text-align: left;
+}
+
+#main .UnitContent{
+	word-wrap: break-word;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+#main{
+	padding: 20px 0;
+}
+}
+
+@media (min-width: 992px) {
+#main{
+	padding: 30px 0;
+}
+}
+
+#mainTitle{
+	font-size: 24px;
+	color: #444;
+	text-align: center;
+	margin: 0;
+}/*主標題*/
+
+.mainTitle-link{
+	float: right;
+	padding-right: 10px;
+	font-size: 13px;
+	font-weight: 600;
+}/*主標題 區塊 連結*/
+
+.titleLine{
+	width: 50px;
+	height: 3px;
+	margin: 5px auto;
+	background: #FFECE0;
+}/*標題 下底線*/
+
+.UnitTitle {
+    text-align: left;
+    background-color: #f3f3f3;
+    font-size: 18px;
+	line-height: 20px;
+	min-height: 22px;
+    color: #444;
+    padding: 10px 10px;
+    float: none;
+	box-sizing: content-box;
+}/*標題*/
+
+.UnitTitle-flex{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titleItem{
+	width: 22px;
+	height: 22px;
+	box-sizing: border-box;
+    border: 1px solid #f3731f;
+    color: #f3731f;
+    background: #FFECE0;
+	margin-right: 5px;
+	text-align: center;
+}/*標題 項次*/
+
+.UnitContent{
+	margin-top: 0;
+	padding: 15px;
+}/*內容*/
+
+.UnitContent .dividerLine{
+	background: #eee;
+    height: 1px;
+	padding: 0 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}/*分割線*/
+
+@media (min-width: 768px) {
+#mainTitle{
+	font-size: 30px;
+}/*主標題*/
+
+.mainTitle-link{
+	font-size: 15px;
+}/*主標題 區塊 連結*/
+
+.titleLine{
+	margin: 10px auto;
+	height: 5px;
+}/*標題 下底線*/
+
+.UnitTitle {
+    font-size: 20px;
+	line-height: 24px;
+	min-height: 26px;
+}/*標題*/
+
+.titleItem{
+	width: 26px;
+	height: 26px;
+}/*標題 項次*/
+}
+
+/******************************************************************/
+/* 間距 共用 樣式 */
+/******************************************************************/
+.orderStatus,
+.newsGroup,
+.orderList,
+#orderProcess,
+#myShopping,
+.productInformation{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+.orderStatus,
+.newsGroup,
+.orderList,
+#orderProcess,
+#myShopping,
+.productInformation{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+}
+
+/******************************************************************/
+/* 表單 共用 樣式 */
+/******************************************************************/
+
+#main label,
+.modal label{
+	color: #444;
+}
+
+#main label font,
+.modal label font{
+	font-weight: 500;
+}
+
+#main .form-control,
+.modal .form-control{
+	border-radius: 0;
+}
+
+#main .form-inline .form-group,
+.modal .form-inline .form-group{
+	display: inline-block;
+    vertical-align: middle;
+	margin-bottom: 0;
+}
+
+#main textarea,
+.modal textarea{
+	resize: vertical;
+}
+
+#main .radio input[type=radio],
+#main .checkbox input[type=checkbox],
+#main .radio-inline input[type=radio],
+#main .checkbox-inline input[type=checkbox],
+.modal .radio input[type=radio],
+.modal .checkbox input[type=checkbox],
+.modal .radio-inline input[type=radio],
+.modal .checkbox-inline input[type=checkbox]{
+	opacity: 0;
+	left: 5px;
+	margin: 0;
+	cursor: pointer;
+}/*自訂樣式 checkbox 和 radio 用*/
+
+
+#main .checkbox-inline+.checkbox-inline,
+#main .radio-inline+.radio-inline,
+.modal .checkbox-inline+.checkbox-inline,
+.modal .radio-inline+.radio-inline{
+	margin-left: 0;
+}/*自訂樣式 checkbox 和 radio 用*/
+
+#main .checkbox,
+#main .radio,
+.modal .checkbox,
+.modal .radio {
+    margin-top: 0px;
+	margin-bottom: 0;
+}/*自訂樣式 checkbox 和 radio 用*/
+
+@media (max-width: 413px) {
+#main .form-inline .widthDate{
+	width: 48%;
+}
+}
+
+@media (max-width: 767px) {
+#main label,
+.modal label{
+	font-size: 14px;
+}
+}
+
+@media (min-width: 768px) {
+#main label,
+.modal label{
+	margin-bottom: 10px;
+}
+}
+
+/******************************************************************/
+/* 單品細項 Modal 共用 */
+/******************************************************************/
+.modal .modal-content{
+	border-radius: 0;
+}
+
+.modal .modal-header.header-bg{
+	background-color: #f3f3f3;
+	color: #444;
+	font-size: 18px;
+    line-height: 24px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom-width: 0;
+}
+
+.modal .modal-header.del-bg{
+	background-color: #FF3333;
+	color: #FFF;
+}
+
+.modal .modal-header.header-bg .close{
+	margin-top: 0;
+}
+
+.modal .modal-title{
+	font-size: 18px;
+    line-height: 24px;
+	color: #444;
+	padding-bottom: 15px;
+}
+
+
+.modal .modal-body #CustomAccordion,
+.modal .modal-body .CustomAccordion{
+	margin: 0 -15px;
+}
+
+.modal #CustomAccordion .panel
+.modal .CustomAccordion .panel{
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.modal #CustomAccordion .panel-default,
+.modal .CustomAccordion .panel-default{
+	border-width: 0;
+}
+
+.modal #CustomAccordion .panel+.panel,
+.modal .CustomAccordion .panel+.panel {
+    margin-top: 0;
+}
+
+.modal #CustomAccordion .panel-heading,
+.modal .CustomAccordion .panel-heading{
+	color: #444;
+    background-color: #f3f3f3;
+	border-radius: 0;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.modal .CustomAccordion .panel-heading{
+	border-bottom: 0;
+}
+
+.modal #CustomAccordion .panel-title,
+.modal .CustomAccordion .panel-title{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.modal #CustomAccordion .panel-title a,
+.modal .CustomAccordion .panel-title a{
+	display: block;
+}
+
+.panel-title > a:before {
+    content: "\f078";
+    transform: rotate(0deg) ;
+    transition: all linear 0.25s;
+    float: right;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.panel-title > a.collapsed:before {
+    transform: rotate(-90deg) ;
+}
+
+.modal #CustomAccordion .panel-body,
+.modal .CustomAccordion .panel-body{
+	border-top-width: 0;
+}
+
+.modal #CustomAccordion .required,
+.modal #CustomAccordion .remarks,
+.modal .CustomAccordion .required,
+.modal .CustomAccordion .remarks{
+	color: #888;
+	font-size: 12px;
+	padding: 0 0 0 10px;
+	cursor: default;
+	margin: 0 10px;
+	float: right;
+}/*必填 & 備註 樣式*/
+
+.modal #CustomAccordion .required,
+.modal .CustomAccordion .required{
+	padding: 0 10px;
+	border-radius: 50px;
+	background: #fff;
+	border: 1px solid #aaa;
+	line-height: 20px;
+}/*必填 & 備註 樣式*/
+
+.modal #CustomAccordion .required.error,
+.modal .CustomAccordion .required.error{
+	border: 1px solid #e10000;
+	color: #e10000;
+}/*必填 (錯誤)*/
+
+
+.modal #CustomAccordion .panel-title a:focus,
+.modal #CustomAccordion .panel-title a:hover,
+.modal .CustomAccordion .panel-title a:focus,
+.modal .CustomAccordion .panel-title a:hover {
+    text-decoration: none;
+}
+
+.modal #CustomAccordion .panel-body,
+.modal .CustomAccordion .panel-body{
+	padding: 0;
+}
+
+.modal #CustomAccordion label,
+.modal .CustomAccordion label{
+	color: #888;
+    font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 7px 15px;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.modal #CustomAccordion label:hover,
+.modal .CustomAccordion label:hover{
+	background: #fafafa;
+}
+
+.modal #CustomAccordion .radio input[type=radio],
+.modal #CustomAccordion .checkbox input[type=checkbox],
+.modal .CustomAccordion .radio input[type=radio],
+.modal .CustomAccordion .checkbox input[type=checkbox]{
+	opacity: 0;
+	right: 16px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.modal #CustomAccordion label font,
+.modal .CustomAccordion label font{
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+.modal #CustomAccordion .radio .checkround,
+.modal #CustomAccordion .checkbox .checkmark,
+.modal .CustomAccordion .radio .checkround,
+.modal .CustomAccordion .checkbox .checkmark{
+	margin-right: 0;
+}
+
+.modal #CustomAccordion .form-control,
+.modal .CustomAccordion .form-control{
+	color: #888;
+	min-height: 50px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.modal .inputQuantity{
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.modal .addBtn{
+	width: 100%;
+}
+
+.modal .addBtn .btn{
+	border-radius: 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.modal .addBtn .btn[disabled]{
+	opacity: .85;
+}
+
+.modal .modal-body .retraction{
+	width: 90%;
+	margin: 0 auto;
+}/* 內縮區塊 */
+
+.modal .modal-body .retraction .modal-title{
+	font-size: 18px;
+	line-height: 24px;
+	padding-left: 5px;
+	padding-right: 5px;
+}/* 內縮區塊 */
+
+.modal .modal-body .contentItem{
+	color: #888;
+}/* 內容項次 */
+
+.modal .modal-body .contentItem h6{
+	background-color: #f8f8f8;
+	color: #444;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 5px 8px;
+	margin-bottom: 0;
+	margin-top: 0;
+}/* 內容項次 */
+
+.modal .modal-body .contentItem h6+h6{
+	margin-top: 10px;
+}/* 內容項次 */
+
+.modal .modal-body .contentItem h5,
+.modal .modal-body .contentItem ul,
+.modal .modal-body .contentItem label{
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.modal .modal-body .contentItem h5,
+.modal .modal-body .contentItem ul li,
+.modal .modal-body .contentItem label{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.modal .modal-body .contentItem label{
+	margin-bottom: 0;
+}
+
+.modal .modal-body .contentItemDetail{
+	padding: 10px 15px;
+}/* 內容明細 */
+
+.modal .modal-body .contentItem h5{
+	margin-top: 0;
+    margin-bottom: 0;
+}/* 內容明細 產品名稱 */
+
+.modal .modal-body .contentItem ul{
+	margin-bottom: 0;
+}/* 內容明細 */
+
+.modal .modal-body .contentItemDetail .radio{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+@media (max-width: 320px) {
+.modal .addBtn .btn{
+	font-size: 12px;
+}
+}
+
+@media (max-width: 767px) {
+.modal #CustomAccordion .panel-heading,
+.modal .CustomAccordion .panel-heading{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.modal #CustomAccordion .form-control,
+.modal .CustomAccordion .form-control{
+    font-size: 12px;
+}
+
+.modal .inputQuantity .btn,
+.modal .inputQuantity .form-control,
+.modal .addBtn .btn{
+	padding-left: 6px;
+	padding-right: 6px;
+}
+}
+
+@media (min-width: 768px) {
+.modal .modal-header.header-bg{
+	font-size: 20px;
+    line-height: 26px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.modal .modal-title{
+	font-size: 20px;
+    line-height: 26px;
+	padding-bottom: 15px;
+}
+
+.modal #CustomAccordion .panel-title,
+.modal .CustomAccordion .panel-title{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.modal #CustomAccordion .required,
+.modal #CustomAccordion .remarks,
+.modal .CustomAccordion .required,
+.modal .CustomAccordion .remarks{
+	font-size: 14px;
+}/*必填 & 備註 樣式*/
+
+.modal #CustomAccordion .required,
+.modal .CustomAccordion .required{
+	line-height: 22px;
+}/*必填 & 備註 樣式*/
+
+.modal #CustomAccordion label,
+.modal .CustomAccordion label{
+    font-size: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.modal #CustomAccordion .radio input[type=radio],
+.modal #CustomAccordion .checkbox input[type=checkbox],
+.modal .CustomAccordion .radio input[type=radio],
+.modal .CustomAccordion .checkbox input[type=checkbox]{
+	right: 17px;
+}
+
+.modal .inputQuantity,
+.modal .addBtn{
+	float: left;
+	padding: 0 5px;
+}
+
+.modal .addBtn .btn{
+	font-size: 16px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.modal .inputQuantity{
+	width: 27%;
+}
+
+.modal .addBtn{
+	width: 73%;
+}
+}
+
+
+@media (min-width: 992px) {
+.modal .inputQuantity{
+	width: 19%;
+}
+
+.modal .addBtn{
+	width: 81%;
+}
+}
+
+
+/******************************************************************/
+/* 產品詳情 Modal */
+/******************************************************************/
+
+.productModal .LeftImg{
+	max-width: 23%;
+    max-height: 52px;
+	flex-shrink: 0;
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #222;
+	border-radius: 5px;
+	margin-right: 8px;
+}
+
+.productModal .LeftImg img{
+	width: 100%;
+	height: auto;
+}
+
+.productModal .RightText h4{
+	color: #444;
+	font-weight: 600;
+	font-size: 18px;
+    max-height: 20px;
+    line-height: 20px;
+	overflow: hidden;
+	margin-bottom: 3px;
+	display: flex;
+	align-items: flex-start;
+	padding-bottom: 0;
+}
+
+.productModal .RightText h4 .label{
+	margin-left: 5px;
+	border-radius: 50px;
+	font-size: 10px;
+	align-self: flex-end;
+}
+
+.productModal .RightText p{
+	overflow: hidden;
+    max-height: 36px;
+	font-size: 12px;
+    line-height: 18px;	
+	color: #888;
+	margin: 0;
+}
+
+.productModal .RightText font{
+	font-size: 12px;
+    line-height: 18px;
+	font-weight: 600;
+	color: #444;	
+}
+
+.productModal .ProductIntroduction{
+	margin: 12px 0 0 0;
+	max-height: 36px;
+    font-size: 12px;
+    line-height: 18px;
+	overflow: hidden;
+	color: #888;
+}
+
+.productModal .modal-header{
+	border-bottom-width: 0;
+	padding-top: 15px;
+	padding-bottom: 0;
+}
+
+.productModal .modal-body{
+	padding-bottom: 0;
+}
+
+.productModal .modal-footer{
+	text-align: center;
+	border-top: 1px solid #d2d2d2;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+@media (min-width: 768px) {
+.productModal .LeftImg{
+	max-width: 20%;
+    max-height: 110px;
+}
+
+.productModal .RightText h4{
+	font-size: 30px;
+    max-height: 30px;
+    line-height: 30px;
+}
+
+.productModal .RightText h4 .label{
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+
+.productModal .RightText p{
+    max-height: 40px;
+	font-size: 14px;
+    line-height: 20px;	
+}
+
+.productModal .RightText font{
+	font-size: 14px;
+    line-height: 20px;
+}
+
+.productModal .ProductIntroduction {
+    max-height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+}
+}
+
+
+/******************************************************************/
+/* 修改訂購細項 Modal */
+/******************************************************************/
+
+.editItemModal .RightText h4{
+	color: #444;
+	font-weight: 600;
+	font-size: 18px;
+    max-height: 20px;
+    line-height: 20px;
+	overflow: hidden;
+	margin-bottom: 3px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.editItemModal .modal-body{
+	padding-bottom: 0;
+}
+
+.editItemModal .modal-footer{
+	text-align: center;
+	border-top: 1px solid #d2d2d2;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/******************************************************************/
+/* 刪除訂單 或 刪除訂購項目 Modal */
+/******************************************************************/
+
+.delOrderModal .contentItemDetail,
+.delItemModal .contentItemDetail{
+	padding-top: 0;
+}
+
+/******************************************************************/
+/* 出貨 Modal */
+/******************************************************************/
+
+.shipNowModal .contentItemDetail ul li{
+	min-width: 49%;
+	color: #444;
+}
+
+.shipNowModal .contentItemDetail .customInput-inline{
+	width: 160px;
+}
+
+/******************************************************************/
+/* 我的購物車 */
+/******************************************************************/
+
+#myShopping .table{
+	margin-bottom: 0;
+}
+
+#myShopping .UnitContent{
+	padding: 0;
+}
+
+#myShopping .shoppingList>tbody>tr>td{
+	border-top-width: 0;
+	vertical-align: top !important;
+	color: #444;
+	font-weight: 600;
+    font-size: 15px;
+}
+
+#myShopping .table>tbody>tr>td{
+	border-top-width: 0;
+	vertical-align: middle;	
+}
+
+#myShopping .shoppingList>tbody>tr>td:first-child{
+	padding-left: 15px;
+	
+}/*第一個 td*/
+
+#myShopping .shoppingList>tbody>tr>td:last-child{
+	padding-right: 15px;	
+}/*最後一個 td*/
+
+#myShopping .shoppingList.table-hover>tbody>tr:hover {
+    background-color: #fbfbfb;
+}
+
+#myShopping .shoppingOption{
+	width: 80px;
+}/*數量 (下拉)*/
+
+#myShopping .shoppingProduct{
+	text-align: left;
+	width: 100%;
+}/*訂購項目*/
+
+#myShopping .shoppingProduct h5{
+	margin: 0;
+	font-weight: 600;
+	font-size: 15px;
+	color: #444;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+	display: flex;
+}/*訂購項目*/
+
+#myShopping .shoppingProduct h5 font{
+	margin-left: auto;
+}
+
+
+#myShopping .shoppingProduct ul{
+	margin-bottom: 0;
+	font-size: 13px;
+	font-weight: 500;
+    line-height: 18px;
+	color: #888;
+}
+
+#myShopping .shoppingProduct ul li{
+	padding-right: 0;
+}
+
+#myShopping .shoppingList>tbody>tr>td.shoppingDel{
+	width: 12%;
+	line-height: 40px;
+	vertical-align: middle !important;
+}
+
+#myShopping .shoppingDel i{
+	padding-right: 0;
+}
+
+#myShopping .shoppingDel .btn-delete{
+	border-width: 0;
+	background: none;
+	padding: 0;
+	font-size: 16px;
+	color: #d2d2d2;
+}
+
+#myShopping .shoppingDel .btn-delete:hover,
+#myShopping .shoppingDel .btn-delete:focus{
+	color: #a1a1a1;
+}
+
+#myShopping .shoppingDel .btn-delete:active{
+	box-shadow: none;
+}
+
+#myShopping .shoppingAmount{
+	color: #888;
+	font-size: 14px;
+}
+
+#myShopping .shoppingAmount>tbody>tr>td{
+	padding: 8px 15px;
+}
+
+#myShopping .shoppingAmount .divider {
+    padding: 0 15px;
+}
+
+#myShopping .shoppingAmount .divider .line{
+    background: #d2d2d2;
+    height: 1px;
+}
+
+#myShopping .shoppingAmount .total{
+	font-size: 16px;
+	color: #444;
+	font-weight: 600;
+}
+
+/******************************************************************/
+/* 訂購資訊 */
+/******************************************************************/
+.newsGroup .UnitContent{
+	text-align: left;
+	color: #888;
+}
+
+/******************************************************************/
+/* 訂單流程 */
+/******************************************************************/
+#orderProcess .nav-tabs {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-bottom: 0;
+}
+
+#orderProcess .liner {
+	height: 2px;
+	background: #F3731F;
+	position: absolute;
+	width: 80%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -13px;
+	z-index: 1;
+}
+
+#orderProcess span.round-tabs {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	background: #fff;
+    color: #F3731F;
+	border: 2px solid #F3731F;
+	z-index: 2;
+	text-align: center;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+#orderProcess .round-tabs i{
+	padding-right: 0;
+	
+}
+
+#orderProcess li.active span.round-tabs {
+	background: #F3731F;
+	color: #fff;
+}
+
+#orderProcess .nav-tabs > li {
+	width: 25%;
+	text-align: center;
+	color: #888;
+}
+
+#orderProcess .nav-tabs > li.active{
+	color: #444;
+}
+
+#orderProcess .nav-tabs > li.cancelStep{
+	opacity: 0;
+}/* 取消訂單 */
+
+#orderProcess .nav-tabs > li > div > p{
+	height: 20px;
+	overflow: hidden;
+	line-height: 20px;
+	font-weight: 600;
+	font-size: 14px;
+	margin-top: 6px;
+	margin-bottom: 0;
+}
+
+#orderProcess .nav-tabs > li .outerFrame {
+	position: relative;
+	width: 70px;
+	height: 86px;
+	margin: 0 auto;
+	border-radius: 100%;
+	padding: 0;
+	border: 0;
+	z-index: 2;
+}
+
+@media( max-width : 585px ) {
+
+#orderProcess .liner {
+    margin-top: -8px;
+}
+
+#orderProcess span.round-tabs {
+	font-size: 16px;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+}
+
+#orderProcess .nav-tabs > li .outerFrame {
+	width: 45px;
+	height: 66px;
+	line-height: 66px;
+}
+
+#orderProcess .btn-outline-rounded {
+	padding: 12px 20px;
+}
+
+#orderProcess .nav-tabs > li > div > p{
+	height: 16px;
+	overflow: hidden;
+	line-height: 16px;
+	font-weight: 600;
+	font-size: 10px;
+	margin-top: 3px;
+}
+}
+
+/******************************************************************/
+/* 訂單狀態區 */
+/******************************************************************/
+
+.orderStatus .UnitTitle{
+	background-color: #FFECE0;
+	color: #f3731f;
+}
+
+.orderStatus .UnitContent{
+	text-align: left;
+}
+
+.orderStatus .UnitContent .dividerLine{
+	margin-bottom: 10px;
+}/* 分割線*/
+
+.orderStatus .statusDescription p{
+	font-size: 13px;
+	color: #444;
+	margin-bottom: 0;
+}/*訂單狀態 說明*/
+
+.orderStatus .btnGroup{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}/*訂單狀態 按鈕群組*/
+
+.orderStatus .btnGroup .btn+.btn{
+	margin-left: 5px;
+}
+
+.orderStatus .btn{
+	margin-top: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: block;
+	width: 100%;
+}
+
+.orderStatus .StoreNum .btn{
+    margin-left: 5px;
+    padding: 4px 12px;
+    font-size: 14px;
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+.orderStatus .UnitTitle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.orderStatus .statusDescription p{
+	font-size: 15px;
+}/*訂單狀態 說明*/
+
+.orderStatus .btn{
+	margin-top: 0;
+	padding: 10px 16px;
+    font-size: 18px;
+	width: auto;
+}
+}
+
+/******************************************************************/
+/* 訂單明細 列表 */
+/******************************************************************/
+
+.orderList .orderTotal{
+	text-align: right;
+	font-size: 16px;
+	color: #f3731f;
+	font-weight: 600;
+}/*訂單總金額*/
+
+.orderList .UnitContent {
+	padding: 0 10px;
+	
+}
+
+.orderList .amountDetailsList{
+	text-align: right;
+	font-size: 12px;
+	line-height: 22px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #888;
+}/*訂單金額明細列*/
+
+.orderList .itemTitle{
+	border-top: 1px solid #d2d2d2;
+	background-color: #f5f5f5;
+	text-align: left;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}/* 項次標題列 */
+
+.orderList .itemTitle,
+.orderList .itemTitle h3{
+	color: #444;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 600;
+}/* 項次標題列 */
+
+.orderList .itemTitle h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.orderList .itemTitle p{
+	padding-right: 5px;
+	margin-bottom: 0;
+}/* 項次標題列 項次 */
+
+.itemDetailList > ul.font-orange{
+	font-weight: 700;
+}
+
+.itemDetail{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 12px;
+    line-height: 18px;
+	color: #888;
+}/* 項次明細 */
+
+.itemDetail ul,
+.itemDetail p{
+	text-align: left;
+	margin-bottom: 0;
+	padding: 2px 0;
+}
+
+.itemDetail p{
+	font-size: 11px;
+}
+
+.itemDetail .itemStatus{
+	text-align: right;
+	font-weight: 600;
+}/* 項次 按鈕*/
+
+.itemDetail .itemStatus .btn + .btn{
+	margin-left: 5px;
+}/* 項次 按鈕*/
+
+.orderList .delItemOrder{
+	opacity: .65;
+}/*刪除項目*/
+
+@media (max-width: 375px) {
+.orderList .orderTotal{
+	font-size: 14px;
+}/*訂單總金額*/
+
+}
+
+@media (max-width: 767px) {
+.orderList .amountDetailsTitle{
+	text-align: left;
+}/*訂單金額明細 標題 */
+
+
+.itemDetail .itemStatus .dividerLine{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.itemDetail .itemStatus .btn{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 12px;
+}/* 項次 按鈕*/
+
+}
+
+@media (min-width: 768px) {
+.itemDetail .itemDetail-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}/* 項次明細 */
+
+.orderList .orderTotal{
+	font-size: 18px;
+}/*訂單總金額*/
+
+.orderList .amountDetailsList{
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}/*訂單金額明細列*/
+
+.orderList .itemTitle,
+.orderList .itemTitle h3{
+	font-size: 16px;
+	line-height: 22px;
+}/* 項次標題列 */
+
+.itemDetail{
+	font-size: 14px;
+    line-height: 18px;
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}/* 項次明細 */
+
+.itemDetail p{
+	font-size: 13px;
+}
+
+.itemDetail .itemStatus{
+	font-size: 16px;
+	flex-shrink: 0;
+	min-width: 120px;
+}/* 項次明細 狀態 */
+
+}
+
+/******************************************************************/
+/* 送出按鈕 */
+/******************************************************************/
+.sendOut-group{
+	text-align: center;
+	padding: 10px 0 20px 0;
+}/*送出按鈕 群組*/
+
+.sendOut-group .btn + .btn{
+	margin-left: 5px;
+}/* 送出按鈕 群組 按鈕*/
+
+@media (max-width: 768px) {
+.sendOut-group .btn + .btn{
+	margin-top: 5px;
+}/*送出按鈕 群組*/
+}
+
+@media (min-width: 768px) {
+.sendOut-group{
+	text-align: right;
+}/*送出按鈕 群組*/
+}
+
+
+/******************************************************************/
+/* 團購 總覽 共用 */
+/******************************************************************/
+
+.groupBuyManagement .checkbox input[type=checkbox]{
+	left: 3px;
+}/* 核取方塊 */
+
+.groupBuyManagement label.checkbox{
+	padding-right: 5px;
+	padding-left: 0;
+}/* 核取方塊 */
+
+
+
+/******************************************************************/
+/* 篩選列 */
+/******************************************************************/
+
+.filterList{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	background-color: #f3f3f3;
+}/* 篩選列 */
+
+.filterList,
+.filterList .featuresBtn-group .featuresIconBtn .btn,
+.filterList .form-group label,
+.filterList .input-group-addon{
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+}/* 篩選列 & 功能 icon 按鈕 群組-按鈕 & 標籤*/
+
+.filterList,
+.filterList .form-group label,
+.filterList .input-group-addon{
+	color: #444;
+}/* 篩選列 & 標籤*/
+
+.filterList label.checkbox,
+#overviewTabs-swiper label.checkbox{
+	padding-left: 0;
+}
+
+.filterList .form-group{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+	padding: 10px 0;
+}/* 篩選列 form 群組 */
+
+.filterList .featuresBtn-group .featuresIconBtn{
+	border-left: 1px solid #d2d2d2;
+	border-right: 1px solid #d2d2d2;
+	padding: 0 5px;
+}/* 功能 icon 按鈕 群組*/
+
+.filterList .featuresBtn-group .featuresIconBtn .btn{
+	color: #6f6f6f;
+	padding: 0 5px;
+	background-color: transparent;
+}/* 功能 icon 按鈕 群組-按鈕*/
+
+.filterList .featuresBtn-group .featuresIconBtn .btn:active {
+	box-shadow: none;
+}/* 功能 icon 按鈕 群組-按鈕*/
+
+.filterList .featuresBtn-group .featuresIconBtn .btn:hover,
+.filterList .featuresBtn-group .featuresIconBtn .btn:focus {
+	color: #444;
+}/* 功能 icon 按鈕 群組-按鈕*/ 
+
+.filterList .form-group label{
+	flex-shrink: 0;
+	margin-bottom: 0!important;
+}/* 篩選列 form 群組 所有標籤*/
+
+.filterList .searchGroup{
+	margin: 0 auto;
+}/* 篩選列 搜尋 群組 標籤*/
+
+.filterList .searchGroup label{
+	padding-left: 0;
+	padding-right: 5px;
+}/* 篩選列 搜尋 群組 標籤*/
+
+.filterList .searchGroup .btn{
+	margin-left: 10px;
+}/* 篩選列 搜尋 群組 按鈕*/
+
+
+@media (max-width: 320px){
+.filterList .searchGroup .formGroup-flex-wrap{
+	flex-wrap: wrap;
+}/* 篩選列 搜尋 群組*/
+
+.filterList .searchGroup .formGroup-flex-wrap label{
+	margin-bottom: 5px;
+	padding-right: 0;
+}/* 篩選列 搜尋 群組  標籤*/
+}
+
+
+@media (max-width: 767px){
+
+.filterList .featuresBtn-group{
+	border-bottom: 1px solid #d2d2d2;
+}/* 功能 icon 按鈕 群組*/
+
+.filterList .form-group + .form-group{
+	padding-top: 0!important;
+}/* 篩選列 form 群組 */
+}
+
+
+@media (min-width: 768px){
+.filterList{
+	background-color: #f3f3f3;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}/* 篩選列 */
+
+.filterList .form-group{
+	justify-content: flex-start;
+}/* 篩選列 form 群組 */
+
+.filterList .searchGroup{
+	display: flex;
+}/* 篩選列 搜尋 群組 標籤*/
+
+.filterList .searchGroup label{
+	padding-left: 10px;
+	padding-right: 10px;
+}/* 篩選列 搜尋 群組 標籤*/
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.filterList .featuresBtn-group .featuresIconBtn{
+	padding: 0;
+}/* 功能 icon 按鈕 群組*/
+
+.filterList .searchGroup label{
+	padding-left: 5px;
+	padding-right: 5px;
+}/* 篩選列 搜尋 群組 標籤*/
+
+.filterList .searchGroup .btn{
+	margin-left: 5px;
+}/* 篩選列 搜尋 群組 按鈕*/
+}
+
+@media (min-width: 992px) {
+.filterList,
+.filterList .featuresBtn-group .featuresIconBtn .btn,
+.filterList .form-group label,
+.filterList .input-group-addon{
+	font-size: 15px;
+}/* 篩選列 & 功能 icon 按鈕 群組-按鈕 & 標籤*/
+
+}
+
+
+
+/******************************************************************/
+/* 總覽 tab swiper (可觸屏滑動) */
+/******************************************************************/
+
+#overviewTabs-all #overviewTabs{
+	justify-content: center;
+}
+
+#overviewTabs-all #overviewTabs ul li {
+	font-size: 14px;
+	text-align: center;
+	color: #888;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#overviewTabs .swiper-slide {
+    width: 33.33333%;
+    padding: 2px 5px;
+}
+
+#overviewTabs-all #overviewTabs ul li .badge{
+	color: #888;
+	background: #F8F8F8;
+	border: 1px solid #D2D2D2;
+	font-weight: 500;
+	font-size: 14px;
+	margin-left: 3px;
+	min-width: 34px;
+	border-radius: 50px;
+}
+
+#overviewTabs-all #overviewTabs ul li.active-nav .badge{
+	color: #f3731f;
+	background: #FFECE0;
+	border: 1px solid #f3731f;
+}
+
+#overviewTabs-all #overviewTabs ul li.active-nav {
+	color: #f3731f;
+}
+
+#overviewTabs-all #overviewTabs-swiper {
+	text-align: center;
+}
+
+@media (max-width: 320px) {
+#overviewTabs .swiper-slide {
+    width: 33.33333%;
+    padding: 0;
+}
+}
+
+
+@media (min-width: 768px) {
+#overviewTabs-all #overviewTabs ul li{
+	font-size: 16px;
+}
+
+#overviewTabs .swiper-slide {
+	width: auto;
+    padding: 6px 20px;
+}
+
+}
+
+/******************************************************************/
+/* 總覽 列表 (總覽 tab swiper 內容)*/
+/******************************************************************/
+#overviewTabs-swiper{
+	margin-top: 10px;
+}
+
+#overviewTabs-swiper .noData{
+	text-align: left;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 600;
+	color: #6f6f6f;
+	padding: 8px 10px;
+	height: 137px;
+}
+
+#overviewTabs-swiper .overviewItemTitle,
+#overviewTabs-swiper .overviewItemDetail{
+	padding-left: 10px;
+	padding-right: 10px;
+}/* 項次標題列 */
+
+#overviewTabs-swiper .overviewItemTitle{
+	border-top: 1px solid #d2d2d2;
+	background-color: #f5f5f5;
+	text-align: left;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}/* 項次標題列 */
+
+#overviewTabs-swiper .overviewItemTitle .overviewItemTitle-flex{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	flex-wrap: wrap;
+}
+
+#overviewTabs-swiper .overviewItemTitle .orderNum-group{
+	display: flex;
+}
+
+#overviewTabs-swiper .overviewItemTitle:first-child{
+	border-top-width: 0;
+}/* 項次標題列 第一個*/
+
+#overviewTabs-swiper .overviewItemTitle,
+#overviewTabs-swiper .overviewItemTitle h3{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 600;
+}/* 項次標題列 */
+
+#overviewTabs-swiper .overviewItemTitle{
+	color: #888;
+}/* 項次標題列 */
+
+#overviewTabs-swiper .deleteItem{
+	color: #888 !important;
+}/* 項次標題列 刪除項目 */
+
+#overviewTabs-swiper .overviewItemTitle h3{
+	color: #444;
+	margin-top: 0;
+	margin-bottom: 0;
+}/* 項次標題列 h3 */
+
+#overviewTabs-swiper .overviewItemStatus{
+	margin-bottom: 0;
+}/* 項次標題列 訂單狀態 */
+
+#overviewTabs-swiper .dividerLine{
+	background: #eee;
+    height: 1px;
+	padding: 0 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}/*分割線*/
+
+
+.overviewItemDetail{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 12px;
+    line-height: 18px;
+}/* 項次明細 */
+
+.overviewItemDetail .overviewItemDetail-flex > ul{
+	text-align: left;
+	margin-bottom: 0;
+	color: #444;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.overviewItemDetail .overviewItemDetail-flex ul li{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	word-wrap: break-word;
+}
+
+.overviewItemDetail ul li font{
+	color: #888;
+}
+
+.overviewItemDetail .overviewItemBtn{
+	text-align: center;
+	font-weight: 600;
+}/* 項次 按鈕*/
+
+.overviewItemDetail .overviewItemBtn .btn{
+	margin: 2px 2.5px;
+	padding: 2px 10px;
+}/* 項次 按鈕*/
+
+
+.overviewItemBtn .btn-outline-orange{
+	background-color: #FFECE0;
+}/* 項次 按鈕 橘框按鈕*/
+
+.overviewItemBtn .btn-outline-orange:hover,
+.overviewItemBtn .btn-outline-orange:focus,
+.overviewItemBtn .btn-outline-orange:active{
+    background-color: #F3731F;
+}/* 項次 按鈕 橘框按鈕*/
+
+@media (max-width: 320px) {
+#overviewTabs-swiper .overviewItemStatus{
+	margin-top: 5px;
+}/* 項次標題列 訂單狀態 */
+
+}
+
+@media (max-width: 767px) {
+.overviewItemDetail ul li{
+	width: 100%;
+}
+
+
+.overviewItemDetail ul li.xs-list-inline{
+	width: auto;
+	padding-right: 10px;
+}
+
+.overviewItemDetail .dividerLine{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}/*分割線*/
+
+.overviewItemDetail .overviewItemBtn .btn{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 12px;
+}/* 項次 按鈕*/
+
+}
+
+@media (min-width: 768px) {
+
+#overviewTabs-swiper .overviewItemTitle,
+#overviewTabs-swiper .overviewItemTitle h3{
+	font-size: 16px;
+	line-height: 22px;
+}/* 項次標題列 */
+
+.overviewItemDetail{
+	font-size: 14px;
+    line-height: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}/* 項次明細 */
+
+.overviewItemDetail .overviewItemDetail-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}/* 項次明細 flex */
+
+.overviewItemDetail .overviewItemDetail-flex ul{
+	margin-left: -20px;
+}
+
+.overviewItemDetail .overviewItemDetail-flex ul li{
+	padding: 5px 20px;
+}
+
+.overviewItemDetail .overviewItemDetail-flex ul li.breakLine{
+	min-width: 60%;
+}/* 斷行用 */
+
+.overviewItemDetail .overviewItemBtn{
+	font-size: 16px;
+	flex-shrink: 0;
+	text-align: right;
+}/* 項次明細 狀態 */
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.overviewItemDetail .overviewItemDetail-flex > ul > li{
+	min-width: 50%;
+}
+
+
+.overviewItemDetail .overviewItemBtn{
+	width: 120px;
+}/* 項次明細 狀態 */
+
+}
+
+@media (min-width: 1199px) {
+.overviewItemDetail .overviewItemDetail-flex > ul > li{
+	min-width: 33.333333%;
+	box-sizing: border-box;
+}
+
+.overviewItemDetail .overviewItemBtn{
+	width: 170px;
+}/* 項次明細 狀態 */
+}
+
+/******************************************************************/
+/* 頁碼 */
+/******************************************************************/
+.pageGroup{
+	margin: 15px 0 10px 0;
+}
+
+.pageGroup-flex{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.pageGroup .pagination>li>a,
+.pageGroup .pagination>li>span,
+.pageGroup{
+	color: #888;
+	font-size: 12px;
+}
+
+.pageGroup font{
+	padding-left: 15px;
+	padding-right: 15px;	
+}
+
+.pageGroup .pagination{
+	margin: 0;
+}
+
+
+.pageGroup .pagination>li>a,
+.pageGroup .pagination>li>span,
+.pageGroup font{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+}
+
+.pageGroup .pagination>li>a,
+.pageGroup .pagination>li>span{
+	border: 1px solid #d2d2d2;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.pageGroup .pagination>li>a:focus,
+.pageGroup .pagination>li>a:hover,
+.pageGroup .pagination>li>span:focus,
+.pageGroup .pagination>li>span:hover,
+.pageGroup .pagination>.active>a,
+.pageGroup .pagination>.active>a:focus,
+.pageGroup .pagination>.active>a:hover,
+.pageGroup .pagination>.active>span,
+.pageGroup .pagination>.active>span:focus,
+.pageGroup .pagination>.active>span:hover{
+	color: #444;
+    background-color: #f5f5f5;
+    border-color: #d2d2d2;
+}
+
+.pageGroup .pagination>.disabled>a,
+.pageGroup .pagination>.disabled>a:focus,
+.pageGroup .pagination>.disabled>a:hover,
+.pageGroup .pagination>.disabled>span,
+.pageGroup .pagination>.disabled>span:focus,
+.pageGroup .pagination>.disabled>span:hover{
+	background-color: #fff;
+	color: #888;
+}
+
+.pageGroup .pagination>.active>a,
+.pageGroup .pagination>.active>a:focus,
+.pageGroup .pagination>.active>a:hover,
+.pageGroup .pagination>.active>span,
+.pageGroup .pagination>.active>span:focus,
+.pageGroup .pagination>.active>span:hover,
+.pageGroup .pagination>.disabled>a,
+.pageGroup .pagination>.disabled>a:focus,
+.pageGroup .pagination>.disabled>a:hover,
+.pageGroup .pagination>.disabled>span,
+.pageGroup .pagination>.disabled>span:focus,
+.pageGroup .pagination>.disabled>span:hover{
+	cursor: default;
+}
+
+@media (min-width: 768px){
+.pageGroup{
+	margin: 20px 0 10px 0;
+}
+
+.pageGroup-flex{
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+}
+
+.pageGroup .pagination>li>a,
+.pageGroup .pagination>li>span,
+.pageGroup{
+	color: #888;
+	font-size: 14px;
+}
+
+}
+
+/******************************************************************/
+/* 訂單查詢總覽 */
+/******************************************************************/
+#orderTracking .searchGroup .formGroup-flex-wrap label{
+	padding-left: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+#orderTracking .filterList .searchGroup{
+	flex-wrap: wrap;
+}
+
+#orderTracking .filterList .searchGroup .StoreName{
+	width: 100%;
+}
+
+#orderTracking .filterList .searchGroup .StoreName{
+	padding-top: 0;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+#orderTracking .filterList .searchGroup .StoreName{
+	width: 50%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+#orderTracking .overviewItemDetail .overviewItemBtn {
+    width: 120px;
+}
+}
+
+@media (min-width: 1199px){
+#orderTracking .overviewItemDetail .overviewItemBtn {
+    width: 210px;
+}
+}
+
+/******************************************************************/
+/* 團購產品系列(新增或編輯) */
+/******************************************************************/
+.productInformation .UnitContent{
+	text-align: left;
+	color: #888;
+}
+
+.productInformation .bootstrap-select.btn-group .dropdown-menu li a,
+.productInformation .btn-selectLightGray span{
+	text-align: left !important;
+}
+
+.productInformation .addClassLink{
+	padding-left: 10px;
+	font-size: 14px;
+	color: #f3731f;
+	font-weight: 600;
+	flex-shrink: 0;
+	line-height: 28px;
+}/* 新增產品類別 連結*/
+
+.productInformation .addClassLink:hover,
+.productInformation .addClassLink:focus {
+    color: #B65617;
+    text-decoration: none;
+}/* 新增產品類別 連結*/
+
+.productInformation .pointsInput{
+	width: 30%;
+	margin-left: 5px;
+	margin-right: 5px;
+}/* 樂叩點 input*/
+
+
+@media (max-width: 767px){
+.productInformation i{
+	padding-right: 0;
+}
+
+.productInformation .addClassLink{
+	float: right;
+}/* 新增產品類別 連結*/
+}
+
+@media (min-width: 768px){
+.productInformation .UnitContent{
+	padding-top: 30px;
+}
+
+.productInformation .UnitContent .form-group{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}/* 表單群組 */
+
+.productInformation .UnitContent .form-group label {
+    margin-bottom: 0!important;
+	text-align: right;
+	padding-right: 10px;
+}/* 表單群組 標籤*/
+
+.productInformation .UnitContent .form-group .radio .radio:first-child,
+.productInformation .UnitContent .form-group .radio .radio-inline:first-child,
+.productInformation .UnitContent .form-group .checkbox .checkbox:first-child,
+.productInformation .UnitContent .form-group .checkbox .checkbox-inline:first-child{
+	padding-left: 0;
+}
+
+.productInformation .UnitContent .form-group > label {
+	flex-shrink: 0;
+	min-width: 100px;
+}/* 表單群組 標籤*/
+
+.productInformation .productDescription .form-group{
+	align-items: flex-start;
+}/* 產品資訊 */
+
+}
+
+
+
+
+
+/******************************************************************/
+/* 【Charles 版本】專用 */
+/******************************************************************/
+
+/*  【Charles 版本】 我的購物車 */
+/******************************************************************/
+
+#myShopping .shoppingList-title{
+	color: #888;
+	border-bottom: 1px solid #d2d2d2;
+	font-size: 15px;
+}
+
+#myShopping tr.shoppingList-title:hover{
+	background-color: transparent !important;
+}
+
+#myShopping .shoppingList-title td{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+#myShopping .shoppingPrice{
+	width: 40px;
+}/* 總額 */
+
+#myShopping .shoppingList-title .btn-outline-orange{
+	background-color: #FFECE0;
+	border-radius: 50px;
+	padding: 2px 8px;
+}
+
+#myShopping .shoppingList-title .btn-outline-orange:hover,
+#myShopping .shoppingList-title .btn-outline-orange:focus,
+#myShopping .shoppingList-title .btn-outline-orange:active{
+	background-color: #F3731F;
+}
+
+@media (max-width: 767px) {
+.modal .addBtn .btn-size{
+	display: block;
+	margin-top: 5px;
+}
+
+.modal .addBtn .btn-size+.btn-size{
+	margin-left: 0;
+}
+}
+
+@media (min-width: 768px) {
+.modal .addBtn .btn-size{
+	width: 49%;
+}
+}
+
+/*  【Charles 版本】【非摺疊用】 單品細項 Modal 共用 */
+/******************************************************************/
+.modal .noPanel .required,
+.modal .noPanel .remarks{
+	margin-right: 0 !important;
+}
+
+.modal .noPanel label:hover {
+	background: transparent !important;
+}
+
+.modal .noPanel .panel-body{
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.modal .noPanel .indication{
+	padding: 12px 10px;
+}
+
+/*  【Charles 版本】【原型】 checkbox 和 radio */
+/******************************************************************/
+.prototype-inline-checkbox,
+.prototype-radio-all li{
+	padding: 8px 5px;
+}/* 原型 checkbox & 原型 radio*/
+
+.prototype-inline-checkbox,
+.prototype-radio-all li{
+	display: inline-flex;
+	align-self: stretch !important;
+}/* 原型 checkbox */
+
+.prototype-inline-checkbox input,
+.prototype-radio-all li input{
+	margin-right: 5px;
+}/* 原型 checkbox 內 input*/
+
+.prototype-inline-checkbox label,
+.prototype-radio-all li label{
+	padding: 0!important;
+	margin-bottom: 0 !important;
+}/*原型 checkbox & 原型 radio 內 標籤*/
+
+.prototype-radio-all{
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}/* 一組 原型 radio*/
+
+.prototype-radio-all.spacing-xs li{
+	padding: 5px 3px;
+}/* 間距 小 */
+
+.prototype-radio-all.spacing-xs li input{
+	margin-right: 3px;
+}/* 間距 小 */
+
+.contentItemDetail ul.prototype-radio-all{
+	margin-bottom: 10px !important;
+}
+
+@media (min-width: 768px) {
+.prototype-inline-checkbox,
+.prototype-radio-all li{
+	padding: 15px 10px;
+}/* 原型 checkbox & 原型 radio*/
+}
